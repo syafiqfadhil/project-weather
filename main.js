@@ -38,7 +38,7 @@ function getWeatherByCity(city) {
 
       // check kondisi malam
       const localHour = new Date(location.localtime).getHours();
-      // const localHour = 9;
+      // const localHour = 20;
 
       const nightMode = isNight(localHour);
       const emoji = getIconEmoji(current.condition.code, nightMode);
