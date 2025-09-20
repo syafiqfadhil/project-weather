@@ -83,7 +83,7 @@ function getWeatherByCity(city) {
 
       document.querySelector(".weather-icon").textContent = emoji;
 
-      updateForecast(forecast.forecastday.slice(1, 4), nightMode);
+      updateForecast(forecast.forecastday.slice(1, 3), nightMode);
     })
     .catch((err) => {
       console.log(err);
